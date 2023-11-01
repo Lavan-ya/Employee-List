@@ -1,0 +1,13 @@
+.heading{
+    width: 100%;
+}
+
+.footer{
+    position: fixed;
+   bottom: 0;
+   width: 100%;
+   background-color: aliceblue;
+   text-align: center;
+   padding-top: 1%;
+   padding-bottom: 1%;
+}
