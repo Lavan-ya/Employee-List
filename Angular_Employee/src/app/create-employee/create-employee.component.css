@@ -1,0 +1,12 @@
+.hello{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 35%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.emp{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

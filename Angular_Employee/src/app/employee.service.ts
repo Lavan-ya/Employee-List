@@ -13,4 +13,20 @@ private baseURL = "http://localhost:8080/api/v1/employees";
   getEmployeeList() : Observable<Employee[]>{
     return this.httpClient.get<Employee[]>(`${this.baseURL}`);
   }
+
+  postEmployee(employee :Employee):Observable<Object>{
+    return this.httpClient.post<Object>(`${this.baseURL}`,employee);
+  }
+
+  getEmployeeById(id:number):Observable<Employee>{
+return this.httpClient.get<Employee>(`${this.baseURL}/${id}`);
+  }
+
+  updateEmployee(id:number,employee : Employee):Observable<Object>{
+    return this.httpClient.put(`${this.baseURL}/${id}`,employee);
+  }
+
+  deleteEmployee(id:number):Observable<Employee>{
+    return this.httpClient.delete<Employee>(`${this.baseURL}/${id}`);
+  }
 }

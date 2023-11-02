@@ -1,0 +1,12 @@
+<h3 class="emp">Add Employee</h3>
+<br>
+<div class="col-md-6 offset-md-3">
+<form (ngSubmit)="onSubmit()">
+<div class="form-Group">
+    <input type="text" [(ngModel)]="employee.firstName" name="firstName" class="form-control" placeholder="First Name"/>
+    <br><input type="text" [(ngModel)]="employee.lastName"  name="lastName" class="form-control" placeholder="Last Name"/>
+    <br><input type="text" [(ngModel)]="employee.emailId"  name="emailId" class="form-control" placeholder="Email Id"/>
+    <br><button type="submit" class="btn btn-success d-flex hello">Submit</button>
+</div>
+</form>
+</div>
